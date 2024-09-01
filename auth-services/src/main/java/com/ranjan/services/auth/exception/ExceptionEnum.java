@@ -7,7 +7,7 @@ import static org.springframework.http.HttpStatus.UNAUTHORIZED;
 
 public enum ExceptionEnum {
 
-    UNAUTHORISED_USER(UNAUTHORIZED, "1001", "Unauthorised user"),
+    UNAUTHORISED_USER(UNAUTHORIZED, "1001", "You are not authorized to access this page. Please log in with appropriate credentials."),
     INVALID_TOKEN(BAD_REQUEST, "1002", "Invalid Token");
 
     private HttpStatus responseCode;

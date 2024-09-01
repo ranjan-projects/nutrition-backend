@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Function;
 
 import static com.ranjan.services.wishlist.exception.ExceptionEnum.WISHLIST_ALREADY_EXIST;
 import static com.ranjan.services.wishlist.exception.ExceptionEnum.WISHLIST_NOT_FOUND;
@@ -21,8 +22,11 @@ public class WishlistServiceImpl implements WishlistService {
     private WishlistRepository wishlistRepository;
 
     @Override
-    public List<WishlistEntity> getAllWishlist(String userName) {
-        return wishlistRepository.findByUsername(userName);
+    public List<Wishlist> getAllWishlist(String userName) {
+        List<WishlistEntity> wishlist = wishlistRepository.findByUsername(userName);
+        return wishlist.stream()
+                .map(wish -> mapWishlist.apply(wish))
+                .toList();
     }
 
 //    @Override
@@ -71,6 +75,7 @@ public class WishlistServiceImpl implements WishlistService {
         return existingWishlist.get();
     }
 
+    //TODO: Change this to functional programming
     private WishlistEntity buildWishlistEntity(Wishlist wishlist, WishlistId id) {
         return WishlistEntity.builder()
                 .wishlistId(id)
@@ -92,4 +97,16 @@ public class WishlistServiceImpl implements WishlistService {
                 .foodName(wishlist.getFoodName())
                 .build();
     }
+
+    private final Function<WishlistEntity, Wishlist> mapWishlist = (entity -> Wishlist.builder()
+            .foodName(entity.getFoodName())
+            .servingUnit(entity.getServingUnit())
+            .servingQty(entity.getServingQty())
+            .tagId(entity.getTagId())
+            .tagName(entity.getTagName())
+            .commonType(entity.getCommonType())
+            .photoUrl(entity.getPhotoUrl())
+            .locale(entity.getLocale())
+            .build());
+
 }

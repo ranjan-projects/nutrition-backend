@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface WishlistService {
 
-    List<WishlistEntity> getAllWishlist(String userName);
+    List<Wishlist> getAllWishlist(String userName);
 
 //    WishlistEntity getWishlistById(long id);
 

@@ -23,7 +23,7 @@ public class WishlistController {
 
     @GetMapping
     @Operation(summary = "Get all wishlist", description = "Retrieve a list of all wishlist")
-    public ResponseEntity<List<WishlistEntity>> getAllWishlist(@RequestHeader("username") String username) {
+    public ResponseEntity<List<Wishlist>> getAllWishlist(@RequestHeader("username") String username) {
         return ResponseEntity.ok(wishlistService.getAllWishlist(username));
     }
 

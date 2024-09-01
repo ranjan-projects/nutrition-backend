@@ -6,14 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="84e71a6e-7906-4313-8b37-b78137cd1e2f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/ranjan/services/gateway/constant/GatewayConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ranjan/services/gateway/constant/GatewayConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/ranjan/services/gateway/enums/ApiGatewayEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ranjan/services/gateway/enums/ApiGatewayEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/ranjan/services/gateway/filter/prefilter/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ranjan/services/gateway/filter/prefilter/AuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/ranjan/services/gateway/model/AuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/ranjan/services/gateway/model/AuthResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-services/src/main/java/com/ranjan/services/auth/model/AuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-services/src/main/java/com/ranjan/services/auth/model/AuthResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-services/src/main/java/com/ranjan/services/auth/service/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-services/src/main/java/com/ranjan/services/auth/service/AuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-services/src/main/java/com/ranjan/services/auth/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-services/src/main/java/com/ranjan/services/auth/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-services/src/main/java/com/ranjan/services/auth/exception/ExceptionEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-services/src/main/java/com/ranjan/services/auth/exception/ExceptionEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nutrition-services/src/main/java/com/ranjan/services/nutrition/model/Branded.java" beforeDir="false" afterPath="$PROJECT_DIR$/nutrition-services/src/main/java/com/ranjan/services/nutrition/model/Branded.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nutrition-services/src/main/java/com/ranjan/services/nutrition/model/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/nutrition-services/src/main/java/com/ranjan/services/nutrition/model/Common.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nutrition-services/src/main/java/com/ranjan/services/nutrition/model/Photo.java" beforeDir="false" afterPath="$PROJECT_DIR$/nutrition-services/src/main/java/com/ranjan/services/nutrition/model/Photo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-services/src/main/java/com/ranjan/services/user/exception/ExceptionEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-services/src/main/java/com/ranjan/services/user/exception/ExceptionEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wishlist-services/src/main/java/com/ranjan/services/wishlist/controller/WishlistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist-services/src/main/java/com/ranjan/services/wishlist/controller/WishlistController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wishlist-services/src/main/java/com/ranjan/services/wishlist/repository/WishlistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist-services/src/main/java/com/ranjan/services/wishlist/repository/WishlistRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wishlist-services/src/main/java/com/ranjan/services/wishlist/model/Wishlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist-services/src/main/java/com/ranjan/services/wishlist/model/Wishlist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wishlist-services/src/main/java/com/ranjan/services/wishlist/service/WishlistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist-services/src/main/java/com/ranjan/services/wishlist/service/WishlistService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wishlist-services/src/main/java/com/ranjan/services/wishlist/service/WishlistServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist-services/src/main/java/com/ranjan/services/wishlist/service/WishlistServiceImpl.java" afterDir="false" />
     </list>
@@ -60,8 +63,16 @@
     &quot;git-widget-placeholder&quot;: &quot;TEST&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Virtusa Training/java/api_gateway_routing_exercise_boilerplate&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Virtusa Training/training&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;PLAIN_TEXT&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -69,13 +80,14 @@
       <recent name="D:\Virtusa Training\java\Project\nutritionix-application\api-gateway\src\main\java\com\ranjan\services\gateway\exception" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ranjan.services.auth.configuration" />
       <recent name="com.ranjan.services.gateway.model" />
       <recent name="com.ranjan.services.gateway.filter.prefilter" />
       <recent name="com.ranjan.services.auth.repository" />
       <recent name="com.ranjan.services.wishlist.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ApiGatewayApplication">
+  <component name="RunManager" selected="Application.WishlistApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ranjan.services.gateway.ApiGatewayApplication" />
       <module name="api-gateway" />
@@ -102,12 +114,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NutritionApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ranjan.services.nutrition.NutritionApplication" />
-      <module name="nutrition-services" />
+    <configuration name="EurekaServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ranjan.services.eureka.EurekaServerApplication" />
+      <module name="eureka-server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ranjan.services.nutrition.*" />
+          <option name="PATTERN" value="com.ranjan.services.eureka.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +127,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ranjan.services.user.UserApplication" />
-      <module name="user-services" />
+    <configuration name="NutritionApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ranjan.services.nutrition.NutritionApplication" />
+      <module name="nutrition-services" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ranjan.services.user.*" />
+          <option name="PATTERN" value="com.ranjan.services.nutrition.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,10 +156,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.WishlistApplication" />
-        <item itemvalue="Application.ApiGatewayApplication" />
-        <item itemvalue="Application.AuthApplication" />
-        <item itemvalue="Application.UserApplication" />
         <item itemvalue="Application.NutritionApplication" />
+        <item itemvalue="Application.AuthApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.EurekaServerApplication" />
       </list>
     </recent_temporary>
   </component>

@@ -42,7 +42,8 @@ public class AuthenticationFilter implements GlobalFilter, Ordered {
         log.info("Request path is " + path);
 
         AuthSkipEndpoint requestEndpoint = AuthSkipEndpoint.builder().path(path).httpMethod(method).build();
-        if (AUTH_SKIP_ENDPOINTS.contains(requestEndpoint)) {
+        if (AUTH_SKIP_ENDPOINTS.contains(requestEndpoint) ||
+        path.contains("/api/nutrition/search/")) {
             log.info("Path is in the skip list");
             return chain.filter(exchange);
         }
@@ -61,22 +62,6 @@ public class AuthenticationFilter implements GlobalFilter, Ordered {
 
         ServerWebExchange updatedExchange = exchange.mutate()
                 .request(request).build();
-
-//        Mono<Void> authResponse = webClient.get()
-//                .header(AUTHORIZATION, token)
-//                .retrieve()
-//                .onStatus(HttpStatusCode::isError, this::handleErrorResponse)
-//                .bodyToMono(AuthResponse.class)
-//                .flatMap(response -> {
-//                    // Process the response from the external service
-//
-//                    log.info("Auth response is:" + response.getMessage());
-//                    if (response.getMessage().equalsIgnoreCase("block")) {
-//                        exchange.getResponse().setStatusCode(HttpStatus.FORBIDDEN);
-//                        return exchange.getResponse().setComplete();
-//                    }
-//                    return chain.filter(exchange);
-//                });
 
         log.info("Auth response is: " + authResponse);
 
